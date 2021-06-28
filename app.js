@@ -4,8 +4,10 @@ const http = require("http")
 const app = express();
 
 app.get("/", async (req, res, next) => {
-    res.status(200).write('<h1>Version 1</h1>');
+    console.log("GET req to /")
+    res.status(200).send('<h1>Version 1</h1>');
 });
 
 const server = http.createServer(app);
 server.listen(3000)
+console.log("Listening on 3000");
