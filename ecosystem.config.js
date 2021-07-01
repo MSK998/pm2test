@@ -29,6 +29,7 @@ module.exports = {
       'pre-setup': '',
       // Commands to be run on the machine deploying
       'pre-deploy-local': '',
+      // Commands to run on the production server before the repo gets cloned
       'pre-deploy': 'hostname',
       // Commands to run after the new code has been deployed
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js', 
