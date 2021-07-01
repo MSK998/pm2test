@@ -7,7 +7,7 @@ module.exports = {
   deploy : {
     production : {
       user : 'admmsk',
-      host : 'localhost',
+      host : 'pm2test', // The local virtual machine hosting the application
       ref  : 'origin/master',
       repo : 'https://github.com/MSK998/pm2test.git',
       path : './prod/',
