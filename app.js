@@ -5,7 +5,7 @@ const app = express();
 
 app.get("/", async (req, res, next) => {
     console.log("GET req to /")
-    res.status(200).send('<h1>Version 3</h1>');
+    res.status(200).send('<h1>Version 4</h1>');
 });
 
 const server = http.createServer(app);
