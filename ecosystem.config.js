@@ -31,7 +31,7 @@ module.exports = {
       'pre-deploy-local': '',
       'pre-deploy': 'hostname',
       // Commands to run after the new code has been deployed
-      'post-deploy' : 'npm install && pm2 reload ~/ecosystem.config.js', 
+      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js', 
     }
   }
 };
